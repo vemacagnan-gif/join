@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Joining Roblox Server...</title>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const placeId = params.get("placeId") || "109983668079237";
+        const jobId = params.get("jobId");
+        
+        if (jobId) {
+            window.location.href = `roblox://experiences/start?placeId=${placeId}&gameInstanceId=${jobId}`;
+        }
+    </script>
+</head>
+<body style="font-family: sans-serif; text-align: center; padding-top: 50px;">
+    <h2>Launching Roblox...</h2>
+    <p>Click "Open Roblox" on the browser popup to join the server.</p>
+</body>
+</html>
